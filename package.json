@@ -1,0 +1,23 @@
+{
+  "name": "horizon-theme",
+  "version": "1.0.0",
+  "description": "Theme for Frontity",
+  "keywords": [
+    "frontity",
+    "frontity-theme"
+  ],
+  "homepage": "https://github.com/leobaiano/frontity-horizon-theme",
+  "license": "GPLv3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leobaiano/frontity-horizon-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leobaiano/frontity-horizon-theme"
+  },
+  "dependencies": {
+    "@frontity/components": "^1.7.1",
+    "@frontity/html2react": "^1.6.1",
+    "frontity": "^1.14.1"
+  }
+}
