@@ -15,33 +15,47 @@ const ItemNavigationContainer = styled.li `
     border-bottom: 3px transparent solid;
     display: block;
     position: relative;
+    width: 100%;
+
+    @media screen and (min-width: 1024px) {
+        width: initial;
+    }
 
     :after {
-        content: '';
-        display: block;
-        width: 1px;
-        height: 12px;
-        position: absolute;
-        right: 0;
-        background: #aac54b;
-        top: 50%;
-        margin-top: -1px;
+        @media screen and (min-width: 1024px) {
+            width: 1px;
+            content: '';
+            display: block;
+            height: 12px;
+            position: absolute;
+            right: 0;
+            background: #aac54b;
+            top: 50%;
+            margin-top: -2px;
+        }
     }
 
     a {
         text-transform: uppercase;
         color: #fff;
         font-weight: bold;
-        padding: 61px 30px 51px;
         line-height: 1;
         text-decoration: none;
         position: relative;
         display: block;
+        padding: 20px;
+        border-bottom: 3px #aac54b solid;
 
         :hover ,
         &.active {
             border-bottom: 3px #aac54b solid;
             color: #aac54b ;
+
+        }
+
+        @media screen and (min-width: 1024px) {
+            padding: 61px 30px 51px;
+            border-bottom: 3px transparent solid;
         }
     }
 `;
