@@ -3,11 +3,13 @@ import Switch from "@frontity/components/switch";
 import Loading from "./utils/loading";
 import DocumentTitle from "./utils/document-title";
 import mainStyle from "./styles/main";
+import { MenuOverlay } from "./styles/menu-overlay";
 import Header from "./header";
 import Footer from "./footer";
 
-const Theme = ({ state }) => {
+const Theme = ({ state, actions }) => {
     const data = state.source.get(state.router.link);
+    const { isMobileMenuOpen } = state.theme;
 
     return (
         <>
@@ -25,6 +27,10 @@ const Theme = ({ state }) => {
             <Global styles={mainStyle} />
 
             <Header />
+
+            {isMobileMenuOpen ? (
+                <MenuOverlay isVisible={state.theme.isMobileMenuOpen} onClick={actions.theme.toggleMobileMenu} />
+            ) : null }
 
             <main>
                 <Switch>

@@ -32,6 +32,7 @@ const MainNavigationContainer = styled.nav `
     background-color: rgba(51, 56, 56);
     width: 70%;
     flex-direction: column;
+    z-index: 2;
     
     @media screen and (min-width: 1024px) {
         position: initial;
