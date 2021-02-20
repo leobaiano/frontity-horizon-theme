@@ -36,6 +36,7 @@ const mainStyle = css`
         max-width: 100%;
         height: auto;
     }
+
     body {
         font-family: "Roboto", sans-serif;
         color: #333333;

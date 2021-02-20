@@ -1,9 +1,10 @@
 import { connect, Global, Head } from "frontity";
 import Switch from "@frontity/components/switch";
-import Loading from "./loading";
-import DocumentTitle from "./document-title";
+import Loading from "./utils/loading";
+import DocumentTitle from "./utils/document-title";
 import mainStyle from "./styles/main";
 import Header from "./header";
+import Footer from "./footer";
 
 const Theme = ({ state }) => {
     const data = state.source.get(state.router.link);
@@ -30,6 +31,8 @@ const Theme = ({ state }) => {
                     <Loading when={data.isFetching} />
                 </Switch>
             </main>
+
+            <Footer />
         </>
     );
 };

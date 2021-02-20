@@ -11,6 +11,10 @@ const horizonTheme = {
     state: {
         theme: {
             autoPrefetch: "in-view",
+            contacts: {
+                email: "ljunior2005@gmail.com",
+                phone: "+55 (11) 9999-9999"
+            },
             menu: [
                 ["Home", "/"],
                 ["Page 2", "/page-2"],
